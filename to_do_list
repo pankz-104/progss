@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="to_do.css">
+    <title>To_Do_List</title>
+  </head>
+  <body>
+    <h1>To do list app</h1>
+    <form class="" action="" method="post" id = "todofrom">
+
+      <input id = "todoinput" name="" value="">
+      <button type="button" onclick = "todolist()" name="button">click me!!</button>
+
+    </form>
+    <ol id = "todolist">
+
+    </ol>
+    <script type = "text/javascript">
+
+      function todolist()
+      {
+        var item = document.getElementById("todoinput").value
+        var text = document.createTextNode(item)
+        var newItem = document.createElement("li")
+        newItem.appendChild(text)
+        document.getElementById("todolist").appendChild(newItem)
+      }
+
+    </script>
+  </body>
+</html>
